@@ -5,7 +5,7 @@ class Ship {
   }
 
   ship() {
-    if (this.draft + this.crew * 1.5 >= 20) {
+    if (this.draft > 20) {
       return "Banyak nih muatan kapalnya";
     } else {
       return "Lebih banyak muatan orangnya...";
@@ -13,6 +13,14 @@ class Ship {
   }
 }
 
-const emptyShip = new Ship(20);
+const emptyShip = new Ship(2, 9);
 
 console.log(emptyShip.ship());
+
+// ship() {
+//   if (this.draft + this.crew * 1.5 > 20) {
+//     return "Banyak nih muatan kapalnya";
+//   } else {
+//     return "Lebih banyak muatan orangnya...";
+//   }
+// }
